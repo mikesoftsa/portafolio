@@ -20,9 +20,12 @@ export class ProductosService {
 
     this.http.get('https://paginaweb-fffec.firebaseio.com/productos_idx.json')
         .subscribe( res => {
-          console.log( res.json());
-          this.productos = res.json();
-          this.cargando = false;
+          // console.log( res.json());
+          // setTimeout( () =>{
+            this.productos = res.json();
+            this.cargando = false;
+          // }, 1500);
+
         });
   }
 
