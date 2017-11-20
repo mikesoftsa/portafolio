@@ -8,7 +8,7 @@ export class InformacionService {
   cargada:boolean = false;
   cargada_sobre_nosotros:boolean = false;
   equipo:any[]=[];
-hola
+
   constructor( public http:Http ) {
 
     this.carga_info();

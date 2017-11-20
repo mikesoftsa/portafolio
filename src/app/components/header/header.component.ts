@@ -8,12 +8,10 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  constructor(public _is:InformacionService,
-               public router:Router ){
+  constructor(public _is: InformacionService,
+               public router: Router ){ }
 
-  }
-
-  public buscar_producto( termino:string ){
+  public buscar_producto( termino: string ){
     console.log( termino );
     this.router.navigate( [ 'buscar', termino ]);
   }
